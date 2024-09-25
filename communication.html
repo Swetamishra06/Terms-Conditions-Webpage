@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            height: 17px;
+            width: 100%;
+            background-color: #1a3666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 70px; /* Adjust margin to give more space under navbar */
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px;
+            background-color: transparent;
+        }
+
+        .sidebar ul li a:hover, 
+        .sidebar ul li a.active {
+            background-color: #1a3666;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .large-card {
+            width: 700px;
+            height: auto;
+            background-color: #FFFDD0;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+            padding: 20px;
+        }
+
+        .large-card .text {
+            margin: 0 30px; /* Add padding to left and right */
+            text-align: justify; /* For better alignment */
+        }
+
+        .large-card .text p {
+            margin-bottom: 20px; /* Space between paragraphs */
+        }
+
+        .oval-button {
+            width: 280px;
+            height: 60px;
+            margin-top: 20px;
+            background-color: #062640;
+            border: none;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .oval-button:hover {
+            background-color: #214e7b;
+        }
+
+        .vertical-line {
+            border-left: 1px solid #ccc;
+            height: 100%;
+            margin: 0 20px;
+        }
+
+        h1, h3 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>What's New</h1>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="./agreement.html" >■ Agreement</a></li>
+                <li><a href="./modification.html">■ Modifications to Terms</a></li>
+                <li><a href="./useofwebsite.html">■ Use of Website & Services</a></li>
+                <li><a href="./No.html">■ No Warranties</a></li>
+                <li><a href="./user.html">■ User Responsibility & Intellectual Property</a></li>
+                <li><a href="./unathorized.html">■ Unauthorized Use</a></li>
+                <li><a href="./payment.html">■ Payment & Refund Policy</a></li>
+                <li><a href="./prohibited.html">■ Prohibited Use</a></li>
+                <li><a href="./thirdpsrty.html">■ Third-Party Links & Binding Contract</a></li>   
+                <li><a href="./governinglaw.html">■ Force Majeure, Jurisdiction and Governing Law</a></li>
+                <li><a href="./communication.html"style="background-color: #1a3666; color: white;">■ Communication</a></li>
+            </ul>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="main-content">
+            <h1><b>Terms & Conditions</b></h1>
+            <h3>Last updated on 04-07-2024 08:35:31</h3>
+            <div class="large-card">
+                <div class="text">
+                    <h1 style="color: #142748; font-size: 30px; margin-bottom: 0px;">Communication</h1>
+                    
+                   
+                      <p>All concerns related to these Terms must be communicated to us using the contact information provided on the website.</p>  
+                </div>
+                <a href="./https://img1.wsimg.com/blobby/go/de3e954c-cff8-49a9-ab6e-1eb19357453c/Term%20%26%20Condition%20for%20website.pdf" download="terms & conditions.pdf">
+                    <button class="oval-button">Download Full PDF</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setActive(element) {
+            // Remove active class from all links
+            var links = document.querySelectorAll('.navbar ul li a, .sidebar a');
+            links.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Add active class to clicked link
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
